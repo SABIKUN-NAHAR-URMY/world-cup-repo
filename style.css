@@ -26,18 +26,27 @@ header{
     border-radius: 20px;
 
 }
-
+/* animation */
 .header-section:hover{
     animation-name: sliding;
     animation-duration: 4s;
 }
 
 @keyframes sliding {
-    0%   {background-color: red;}
-    25%  {background-color: yellow;}
-    50%  {background-color: blue;}
-    100% {background-color: green;}
+    0%   {
+            background-color: rgb(252, 215, 215);
+        }
+    25%  {
+            background-color: rgb(125, 125, 13);
+        }
+    50%  {
+            background-color: rgb(145, 145, 194);
+        }
+    100% {
+            background-color: rgb(135, 252, 135);
+        }
   }
+
 .header-text{
     width: 50%;
     padding: 111px 24px 111px 106px;
@@ -54,6 +63,7 @@ header{
 }
 .header-image{
     width: 50%;
+    border: 2px solid red;
 }
 .header-text button{
     background-color: red;
@@ -117,12 +127,18 @@ main{
     grid-template-columns: repeat(3,1fr);
     width: 70%;
 }
+.card-view button{
+    display: none;
+}
 .card-1{
     width: 312px;
     height: 362px;
     border: 1px solid rgb(209, 208, 208);
     border-radius: 5px;
     margin: 0 24px 24px 0;
+}
+.vew{
+    display: visible;
 }
 .card-1 button{
     padding: 4px 16px;
@@ -145,6 +161,7 @@ main{
     display: flex;
     gap:10px;
 }
+
 /* Gallery card section end  */
 
 /* For upcomming-match start */
@@ -213,11 +230,12 @@ hr{
     padding: 40px;
 }
 
+/* Media query */
 
+/* Mobile view  */
 @media only screen and (max-width: 688px) {
     header{
         width: 100%;
-        border: 1px solid blue;
     }
     .header-section{
         width: 90%;
@@ -277,9 +295,61 @@ hr{
     
 }
 
-/* tablet */
+/* Tablet view */
 @media only screen and (min-width: 689px) and (max-width: 992px) {
-    
+    header {
+        width: 100%;
+    }
+    .header-section{
+        width: 80%;
+    }
+
+    .header-text{
+        width: 50%;
+        border: 2px solid red;
+
+    }
+    .header-image{
+        width: 50%;
+        border: 2px solid blue;
+    }
+    .header-text h1{
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 60px;
+    }
+
+    main{
+        width: 100%;
+    }
+    .container{
+        display: block;
+    }
+    .left-side{
+        width: 100%;
+    }
+    .side-bar
+    {
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+        padding-left: 90px;
+    }
+    .side-bar button{
+        border: 1px solid rgb(210, 204, 204);
+        margin: 0 20px 20px 0;
+    }
+
+    .gallery-card{
+        width: 100%;
+    }
+    .card-view{
+        grid-template-columns: repeat(2,1fr);
+        margin: 5px 0 0 130px;
+    }
+
+   
 }
 
 /* website  */
