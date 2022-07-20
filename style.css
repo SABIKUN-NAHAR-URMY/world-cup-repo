@@ -75,6 +75,7 @@ header{
     border-radius: 5px;
     margin-top:30px;
     margin-bottom: 30px;
+    font-size: 17px;
     font-weight: bold;
 }
 #blog{
@@ -88,7 +89,7 @@ header{
 .side-bar a:hover{
         cursor:pointer;
 }
-/* Gallery card section  */
+/* Gallery card section start  */
 .gallery-card{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -117,8 +118,39 @@ header{
     margin: 20px;
     gap: 40px;
 }
-/* .duration img{ */
-    
+
+/* Gallery card section end  */
+
+/* For upcomming-match start */
+.flag{
+    display: flex;
+}
+.flag-img{
+    margin: 25px;
+}
+.flag h1{
+    margin-top: 30px;
+}
+.flag-name{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.flag-date{
+    margin-top: 10px;
+    text-align: center;
+    color: #4D4D4D;
+}
+.flag-1{
+    width: 312px;
+    height: 242px;
+    border: 1px solid rgb(224, 223, 223);
+    border-radius: 10px;
+    margin: 0 24px 24px 0;
+}
+/* Upcoming match end  */
+
 /* footer  */
 footer{
     margin-top:130px;
