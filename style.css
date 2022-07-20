@@ -12,22 +12,38 @@ body{
 
 /* header  */
 header{
+    width: 100%;
+}
+.header-section{
+    width: 82%;
+    height: 80%;
     margin: 50px 139px 130px 140px;
-    background-color: black;
-    color: white;
-    border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1321px;
-    height: 646px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+
 }
+
+.header-section:hover{
+    animation-name: sliding;
+    animation-duration: 4s;
+}
+
+@keyframes sliding {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+  }
 .header-text{
     width: 50%;
     padding: 111px 24px 111px 106px;
 }
 .header-text h1{
-    font-size: 70px;
+     font-size: 70px;
      line-height: 70px; 
      margin-bottom: 20px;
 }
@@ -48,15 +64,18 @@ header{
     font-size: 20px;
 }
 .header-image img{
-    width: 93%;
+    width: 95%;
 }
 /* Main section  */
+main{
+    width: 100%;
+}
 .container{
     display: flex;
 }
 .left-side{
     width: 20%;
-    margin: 0 24px 0 140px ;
+    margin-left: 140px ; 
 }
 .side-bar{
     width: 90%;
@@ -69,7 +88,7 @@ header{
 }
 .side-bar button{
     background-color: white;
-    width: 200px;
+    width: 80%;
     height: 50px;
     border-style: none;
     border-radius: 5px;
@@ -91,8 +110,12 @@ header{
 }
 /* Gallery card section start  */
 .gallery-card{
+    width: 80%;
+}
+.card-view{
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    width: 70%;
 }
 .card-1{
     width: 312px;
@@ -118,7 +141,10 @@ header{
     margin: 20px;
     gap: 40px;
 }
-
+.duration{
+    display: flex;
+    gap:10px;
+}
 /* Gallery card section end  */
 
 /* For upcomming-match start */
@@ -177,4 +203,88 @@ hr{
     gap: 40px;
     color: #B9B9B9;
 }
+
+.social-media{
+    margin: 40px;
+    text-align: center;
+}
+.social-media a{
+    color: white;
+    padding: 40px;
+}
+
+
+@media only screen and (max-width: 688px) {
+    header{
+        width: 100%;
+        border: 1px solid blue;
+    }
+    .header-section{
+        width: 90%;
+        margin: 24px;
+        display: block;
+    }
+
+    .header-text{
+        width: 100%;
+        padding: 28px 38px 21px 38px; 
+        text-align: center;
+
+    }
+    .header-text h1{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .header-image{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    main{
+        width: 100%;
+    }
+    .container{
+        display: block;
+    }
+    .left-side{
+        width: 100%;
+    }
+    .side-bar{
+        width: 50%;
+        background-color: white;
+    }
+    .side-bar button{
+        border: 1px solid rgb(228, 223, 223);
+    }
+    .gallery-card{
+        width: 100%;
+    }
+    .card-view{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .card-1{
+        margin-left: 60px;
+    }
+    footer{
+      width: 100%;
+      height: 100%;
+    }
+    .service{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        text-align: center;
+    }
+    
+}
+
+/* tablet */
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+    
+}
+
+/* website  */
+@media only screen and (min-width:993px) and (max-width:1312px) {
+    
+}
+
 
